@@ -21,7 +21,7 @@ Main        HTML, Body, etc.
 /*---------------------------------------------------------*\
                          $Imports
 \*---------------------------------------------------------*/
-
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Raleway:400,800,900,600);
 
 
 /*---------------------------------------------------------*\
@@ -46,16 +46,9 @@ Main        HTML, Body, etc.
 }
 
 * {
-	font-family:
-}
-
-* {
 	list-style-type: none;
 }
 
-* {
-
-}
 
 
 /*---------------------------------------------------------*\
@@ -69,6 +62,25 @@ Main        HTML, Body, etc.
 
 
 
+.rocking-quote, .super-quote, .best-quote {
+	max-width: 25%;
+	position: relative;
+	overflow: auto;
+}
+.figures-all q {
+/* 	padding-bottom: 4em; */
+}
+.fig-div {
+	margin-top: 2em;
+}
+q, figcaption, span {
+	color: white;
+	font-family: Bitter, serif;
+	font-weight: 400;
+	line-height: 2em;
+}
+
+
 /*---------------------------------------------------------*\
                          $Main
 \*---------------------------------------------------------*/
@@ -78,6 +90,10 @@ Main        HTML, Body, etc.
          $html
 \*--------------------*/
 
+html {
+	height: 100%;
+	width: 100%;
+}
 
 /*--------------------*\
          $head
@@ -88,6 +104,197 @@ Main        HTML, Body, etc.
          $body
 \*--------------------*/
 
+body {
+	background: #133039;
+	height: 100%;
+	width: 100%;
+}
 
 
 
+.intro {
+	width: 100%;
+	display: flex;
+	float: left;
+}
+.intro-header {
+	padding-left: 5%;
+	padding-top: 20px;
+	font-family: Raleway, sans-serif;
+	font-weight: 900;
+}
+.intro h1 {
+	color: white;
+}
+.intro-cta {
+	position: absolute;
+	right: 0;
+	padding-top: 52px;
+	padding-right: 8%;
+	font-family: Bitter, serif;
+	font-weight: 700;
+}
+.intro-cta a {
+	padding: 10px 15px 10px;
+	background: white;
+	color: #133039;
+	border: solid white;
+}
+.intro-cta a:hover {
+	background-color:#133039;
+	color: white;
+}
+
+
+.intro-slogan {
+	font-family: Bitter, serif;
+	font-weight: 400;
+	clear: left;
+    display: flex;
+    justify-content: center;
+    padding: 6% 0 5%;
+}
+.intro-slogan h3 {
+	color: white;
+}
+
+.explainer-video {
+
+}
+
+.icon-row-shell {
+	width: 100%;
+	padding: 5% 0 5%;
+}
+.feature-icon-row {
+	width: 100%;
+	background: #E7D7B6;
+	padding: 2% 0 3%;
+	border: solid white;
+}
+.feature-list {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: .2% 1% .2%;
+}
+img {
+	max-width: 100%;
+}
+.feature-list li p {
+	font-family: Raleway, sans-serif;
+	font-weight: 600;
+	text-align: center;
+}
+
+.product-description {
+	width: 100%;
+	padding: 5% 0 5%;
+}
+.product-description h2 {
+	font-family: Raleway, sans-serif;
+	font-weight: 600;
+	padding-bottom: 3%;
+	color: white; 
+}
+.product-description p {
+	font-family: Bitter, serif;
+	font-weight: 400;
+	line-height: 2em;
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+.testimonials {
+	width: 100%;
+	padding: 5% 0 5%;
+}
+.testimonials:first-child {
+	width: 100%;
+}
+.testimonials h2 {
+	font-family: Raleway, sans-serif;
+	font-weight: 600;
+	padding-bottom: 3%;
+	color: white;
+}
+.figures-all {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+figcaption {
+	clear: both;
+	position: relative;
+	bottom: 0;
+	padding-top: 2em;
+}
+
+.outro-cta {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: Bitter, serif;
+	font-weight: 700;
+	padding-top: 50px;
+	padding-bottom: 150px;
+}
+.outro-cta a {
+	padding: 10px 15px 10px;
+	background: white;
+	color: #133039;
+	border: solid white;
+}
+.outro-cta a:hover {
+	background-color:#133039;
+	color: white;
+}
+
+footer {
+	width: 100%;
+}
+footer section {
+	width: 100%;
+}
+footer h2 {
+	font-family: Raleway, sans-serif;
+	font-weight: 600;
+	padding-bottom: 3%;
+	color: white;
+}
+.contact {
+	width: 100%;
+	padding-top: 60px;
+	padding-bottom: 0px;
+}
+.contact ul {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.contact li {
+	color: white;
+}
+
+.share {
+	margin-top: 40px;
+	padding-bottom: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.share a {
+	padding: 0 .5% 0;
+	-webkit-transition: margin 0.3s ease-out;
+	-moz-transition: margin 0.3s ease-out;
+	-o-transition: margin 0.3s ease-out;
+	   trasition: margin 0.3s ease-out;
+}
+.share a:hover {
+	cursor: pointer;
+	margin-top: -20px;
+}
